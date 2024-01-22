@@ -9,6 +9,17 @@
     table, th, td {
         border: 1px solid black;
     }
+    header {
+        padding: 3px;
+        background-color: gray;
+        color: white;
+    }
+    footer {
+        text-align: center;
+        padding: 3px;
+        background-color: gray;
+        color: white;
+    }
 </style>
 <body>
     <header>
@@ -26,7 +37,7 @@
         <h1>Images</h1>
             <figure>
                 <ul>
-                    <img source="https://raw.githubusercontent.com/KharonKade/226240429-WebApp/main/pfp.jpg" alt="profile picture" weight="250" height="300">
+                    <img src="https://raw.githubusercontent.com/KharonKade/226240429-WebApp/main/pfp.jpg" alt="profile picture" weight="250" height="300">
                     <figcaption> Profile Picture</figcaption>
                 </ul>
             </figure>
@@ -37,10 +48,10 @@
             <ul>
                 <form>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br>
+                    <input type="text" id="name" name="name" required minlength="15" patterm="[A-Za-z\s]+" title="Enter a valid name"><br>
                     <br>
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required><br>
+                    <input type="password" id="password" name="password" required minlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase letter, and at least 8 or more characters."><br>
 
                     <h5>GENDER:</h5>
                     <label for="male">MALE</label>
@@ -82,7 +93,7 @@
     <section>
             <h1>Audio</h1>
                 <ul>    
-                    <audio control>
+                    <audio controls>
                         <source scr="LP - Lost On You (Live).mp3" type="audio/mp3">
                         Your browser does not support the audio tag
                     </audio>
@@ -99,7 +110,7 @@
             </ul>
     </section>
 
-    <footer>
+    <footer class=" ">
         TELETUBBIES
     </footer>
 
