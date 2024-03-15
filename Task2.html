@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <style type="text/css">
+        .bacground {
+            background: lightgray;
+        }
+        .head {
+            background: yellow;
+        }
+        .eyeball {
+            background: white;
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: relative;
+
+        }
+        .pupil {
+            background: black;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .beak {
+            color: orange; 
+            font-size: 24px; 
+        }
+        .body {
+            background: yellow; 
+        }
+        .wing {
+            color: red; 
+            font-size: 48px; 
+        }
+        .drumstick {
+            color: brown; 
+            font-size: 24px; 
+        }
+        .drumstick-right {
+            color: brown; 
+            font-size: 24px; 
+        }
+    </style>
+
+    <div class="canvas background">
+        <div class="air background"></div>
+        <div class="head">
+            <div class="eyeball">
+                <span class="pupil">&middot;</span>
+            </div>
+            <div class="beak">
+                <strong>&gt;</strong>
+            </div>
+        </div>
+        <div class="body">
+            <div class="wing">
+                <strong>&lt;
+                </strong>
+            </div>
+        </div>
+        <div class="drumsticks">
+            <div class="drumstick">|
+            <br />|
+            </div>
+            <div class="drumstick drumstick-right">
+                <br />|
+            </div>
+        </div>
+    </div> 
+
+
+    
+</body>
+</html>
