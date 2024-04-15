@@ -2,7 +2,7 @@ html,
 body {
   min-width: 290px;
   color: #4d4e53;
-  background-color: #ffffff;
+  background-color: lightgray;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
 }
@@ -23,7 +23,7 @@ header {
   margin: 10px;
   text-align: center;
   font-size: 1.8em;
-  font-weight: thin;
+  font-weight: thick;
 }
 
 #main-doc header {

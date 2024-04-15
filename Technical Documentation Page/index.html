@@ -5,7 +5,7 @@
   </head>
   <body>
     <nav id="navbar">
-      <header>JS Documentation</header>
+      <header>Web Application Development</header>
       <ul>
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
         <li>
@@ -15,34 +15,23 @@
         </li>
         <li>
           <a class="nav-link" href="#JavaScript_and_Java"
-            >JavaScript and Java</a
+            >HTML</a
           >
         </li>
-        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Hello_world">Git</a></li>
+        <li><a class="nav-link" href="#Variables">Performing Git</a></li>
+        <li><a class="nav-link" href="#Variable_scope">HTML Elements</a></li>
         <li>
-          <a class="nav-link" href="#Declaring_variables"
-            >Declaring variables</a
-          >
+          <a class="nav-link" href="#Global_variables">HTML5</a>
         </li>
-        <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
-        <li>
-          <a class="nav-link" href="#Global_variables">Global variables</a>
-        </li>
-        <li><a class="nav-link" href="#Constants">Constants</a></li>
-        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li><a class="nav-link" href="#Constants">CSS</a></li>
+        <li><a class="nav-link" href="#Data_types">JavaScript</a></li>
         <li>
           <a class="nav-link" href="#if...else_statement"
-            >if...else statement</a
+            >Linux</a
           >
         </li>
-        <li><a class="nav-link" href="#while_statement">while statement</a></li>
-        <li>
-          <a class="nav-link" href="#Function_declarations"
-            >Function declarations</a
-          >
-        </li>
-        <li><a class="nav-link" href="#Reference">Reference</a></li>
+        <li><a class="nav-link" href="#while_statement">VSCODE</a></li>
       </ul>
     </nav>
     <main id="main-doc">
@@ -50,409 +39,407 @@
         <header>Introduction</header>
         <article>
           <p>
-            JavaScript is a cross-platform, object-oriented scripting language.
-            It is a small and lightweight language. Inside a host environment
-            (for example, a web browser), JavaScript can be connected to the
-            objects of its environment to provide programmatic control over
-            them.
+            In today's digital age, web applications have become an integral part of our daily lives, powering everything from social media platforms to online banking systems. Understanding how to develop web applications is not only a valuable skill but also a gateway to a wide range of career opportunities in the tech industry.
           </p>
 
           <p>
-            JavaScript contains a standard library of objects, such as Array,
-            Date, and Math, and a core set of language elements such as
-            operators, control structures, and statements. Core JavaScript can
-            be extended for a variety of purposes by supplementing it with
-            additional objects; for example:
+            Web application development offers numerous benefits, both personally and professionally with the increasing reliance on online services, the demand for skilled web developers continues to grow steadily. Companies of all sizes are constantly seeking individuals proficient in web development to create and maintain their online presence.
+
+            Web development skills are versatile and applicable across various industries. Whether you're interested in e-commerce, healthcare, education, or entertainment, the ability to build web applications opens doors to diverse career paths.
           </p>
-          <ul>
-            <li>
-              Client-side JavaScript extends the core language by supplying
-              objects to control a browser and its Document Object Model (DOM).
-              For example, client-side extensions allow an application to place
-              elements on an HTML form and respond to user events such as mouse
-              clicks, form input, and page navigation.
-            </li>
-            <li>
-              Server-side JavaScript extends the core language by supplying
-              objects relevant to running JavaScript on a server. For example,
-              server-side extensions allow an application to communicate with a
-              database, provide continuity of information from one invocation to
-              another of the application, or perform file manipulations on a
-              server.
-            </li>
-          </ul>
+
+          <p>
+            The nature of web development often allows for remote work, providing flexibility and freedom in where and when you work. This flexibility is particularly appealing in today's increasingly remote-friendly work environments.The field of web development is dynamic, with new technologies and frameworks emerging regularly. As a web developer, you'll have the opportunity to engage in lifelong learning, staying abreast of industry trends and expanding your skill set.
+          </p>
         </article>
       </section>
       <section class="main-section" id="What_you_should_already_know">
         <header>What you should already know</header>
         <article>
-          <p>This guide assumes you have the following basic background:</p>
+          <p>To fully benefit from this course, it is recommended that you have a basic understanding of:</p>
 
           <ul>
             <li>
-              A general understanding of the Internet and the World Wide Web
-              (WWW).
+              HTML: Hypertext Markup Language for structuring web pages.
             </li>
-            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+            <li>CSS: Cascading Style Sheets for styling web pages.</li>
             <li>
-              Some programming experience. If you are new to programming, try
-              one of the tutorials linked on the main page about JavaScript.
+              JavaScript: A programming language used for creating dynamic and interactive web content.
             </li>
           </ul>
         </article>
       </section>
       <section class="main-section" id="JavaScript_and_Java">
-        <header>JavaScript and Java</header>
+        <header>Web Technologies</header>
         <article>
+          <h2>Historical Development:</h2>
           <p>
-            JavaScript and Java are similar in some ways but fundamentally
-            different in some others. The JavaScript language resembles Java but
-            does not have Java's static typing and strong type checking.
-            JavaScript follows most Java expression syntax, naming conventions
-            and basic control-flow constructs which was the reason why it was
-            renamed from LiveScript to JavaScript.
+            Birth of the World Wide Web (WWW) by Tim Berners-Lee in 1989. The birth of the Internet can be traced back to the late 1960s and early 1970s with the development of ARPANET (Advanced Research Projects Agency Network), a pioneering network that laid the groundwork for the interconnected global network we know today. Here are key milestones in the birth and early development of the Internet:
           </p>
-
-          <p>
-            In contrast to Java's compile-time system of classes built by
-            declarations, JavaScript supports a runtime system based on a small
-            number of data types representing numeric, Boolean, and string
-            values. JavaScript has a prototype-based object model instead of the
-            more common class-based object model. The prototype-based model
-            provides dynamic inheritance; that is, what is inherited can vary
-            for individual objects. JavaScript also supports functions without
-            any special declarative requirements. Functions can be properties of
-            objects, executing as loosely typed methods.
-          </p>
-          <p>
-            JavaScript is a very free-form language compared to Java. You do not
-            have to declare all variables, classes, and methods. You do not have
-            to be concerned with whether methods are public, private, or
-            protected, and you do not have to implement interfaces. Variables,
-            parameters, and function return types are not explicitly typed.
-          </p>
+          <h3>
+            ARPANET Creation (1969):
+          </h3>
+          <ul>
+            <li>
+              ARPANET, the first packet-switching network, was developed by the United States Department of Defense's Advanced Research Projects Agency (ARPA, now DARPA).
+            </li>
+            <li>
+              On October 29, 1969, ARPANET's first message was sent between two computers at the University of California, Los Angeles (UCLA) and the Stanford Research Institute (SRI). The message was "LOGIN.
+            </li>
+          </ul>
+          <h3>
+            Development of TCP/IP (1970s):
+          </h3>
+          <ul>
+            <li>
+              The Transmission Control Protocol (TCP) and Internet Protocol (IP) were developed by Vinton Cerf and Bob Kahn.
+            </li>
+            <li>
+              TCP/IP became the standardized communications protocol suite for ARPANET, forming the foundation for the entire Internet.
+            </li>
+          </ul>
+          <h3>
+            Expansion and Standardization (1970s-1980s):
+          </h3>
+          <ul>
+            <li>
+              The ARPANET continued to grow, connecting more research institutions and universities. The development of standardized protocols contributed to the Internet's expansion.
+            </li>
+            <li>
+              TCP/IP was adopted as the protocol for connecting diverse networks, leading to the term "Internet" (short for interconnected networks).
+            </li>
+          </ul>
+          <h3>
+            Domain Name System (DNS) Introduction (1983):
+          </h3>
+          <ul>
+            <li>
+              The Domain Name System, which translates human-readable domain names into IP addresses, was introduced in 1983.
+            </li>
+            <li>
+              This facilitated the use of easily memorable names instead of numerical IP addresses.
+            </li>
+          </ul>
+          <h3>
+            Commercialization (1990s):
+          </h3>
+          <ul>
+            <li>
+              The 1990s saw the commercialization of the Internet, with the launch of the World Wide Web and the development of browsers like Netscape.
+            </li>
+            <li>
+              The Internet became accessible to the public, leading to a rapid increase in websites and online services.
+            </li>
+          </ul>
+          <h3>
+            Global Expansion and Popularization (1990s-Present):
+          </h3>
+          <ul>
+            <li>
+              The Internet expanded globally, connecting people, businesses, and governments worldwide. Technologies like broadband and mobile internet further increased accessibility.
+            </li>
+            <li>
+              The Internet has become an integral part of everyday life, shaping communication, commerce, education, and entertainment.
+            </li>
+          </ul>
+          <h2>
+            Key Internet Protocols:
+          </h2>
+          <ul>
+            <h4>HTTP (Hypertext Transfer Protocol):</h4>
+              <li>Foundation of data communication on the web.</li>
+              <li>Defines how messages are formatted and transmitted.</li>
+            <h4>HTTPS (Hypertext Transfer Protocol Secure):</h4>
+              <li>Secure version of HTTP using encryption (SSL/TLS).</li>
+              <li>Ensures secure data transfer, especially for sensitive information.</li>
+            <h4>TCP/IP (Transmission Control Protocol/Internet Protocol):</h4>
+              <li>Fundamental suite of protocols for internet communication.</li>
+              <li>Facilitates reliable data transmission between connected devices.</li>
+          </ul>
+            <h2>
+              Client-Server Architecture
+            </h2>
+            <ul>
+              <h4>Roles:</h4>
+                <li>Clients request services or resources.</li>
+                <li>Servers provide requested services or resources.</li>
+              <h4>Request-Response Cycle:</h4>
+                <li>Clients send requests to servers.</li>
+                <li>Servers process requests and send back responses.</li>
+              <h4>Statelessness:</h4>
+                <li>Each request from a client to a server is independent.</li>
+                <li>No retention of client state between requests.</li>
+            </ul>
+            <h2>
+              Client-Server Architecture
+            </h2>
+            <ul>
+              <h4>Roles:</h4>
+                <li>Clients request services or resources.</li>
+                <li>Servers provide requested services or resources.</li>
+              <h4>Request-Response Cycle:</h4>
+                <li>Clients send requests to servers.</li>
+                <li>Servers process requests and send back responses.</li>
+              <h4>Statelessness:</h4>
+                <li>Each request from a client to a server is independent.</li>
+                <li>No retention of client state between requests.</li>
+            </ul>     
+              <h2>
+                Internet Technologies:
+              </h2>
+              <ul>
+                <h4>HTML (Hypertext Markup Language):</h4>
+                  <li>Standard markup language for creating web pages.</li>
+                  <li>Defines structure and layout using tags.</li>
+                <h4>CSS (Cascading Style Sheets):</h4>
+                  <li>Style sheet language for describing the presentation of a document.</li>
+                  <li>Enhances the visual presentation of HTML elements.</li>
+                <h4>JavaScript:</h4>
+                  <li>Programming language that enables dynamic content on web pages.</li>
+                  <li>Enhances interactivity and user experience.</li>
+              </ul>
+                <h2>
+                  Responsive Web Design:
+                </h2>
+                <ul>
+                  <h4>Importance:</h4>
+                    <li>Ensures web applications work well on various devices and screen sizes.</li>
+                    <li>Enhances user experience across desktops, tablets, and mobile devices.</li>
+                  <h4>Media Queries:</h4>
+                    <li>CSS technique for applying styles based on device characteristics.</li>
+                    <li>Allows adaptation to different viewport sizes.</li>
+                  <h4>Flexbox and Grid Layout:</h4>
+                    <li>CSS layout models that simplify the design of flexible and responsive web layouts.</li>
+                </ul>
+              </ul>
+          </ul>
         </article>
       </section>
       <section class="main-section" id="Hello_world">
-        <header>Hello world</header>
+        <header>Git</header>
         <article>
-          To get started with writing JavaScript, open the Scratchpad and write
-          your first "Hello world" JavaScript code:
-          <code
-            >function greetMe(yourName) { alert("Hello " + yourName); }
-            greetMe("World");
-          </code>
+          Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
-          Select the code in the pad and hit Ctrl+R to watch it unfold in your
-          browser!
+          Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
+
+          Git's branching model is lightweight and powerful, allowing developers to create branches quickly and efficiently. This enables experimentation, feature development, and bug fixes in isolated environments without affecting the main codebase. Additionally, Git's merging capabilities make it seamless to integrate changes from one branch to another, facilitating collaboration among team members.
+
+          Git is renowned for its exceptional performance, even when dealing with large repositories and complex projects. Operations such as committing changes, switching branches, and merging are lightning-fast, thanks to Git's efficient data structures and optimized algorithms. This speed and responsiveness enhance developer productivity and workflow efficiency, particularly in scenarios where rapid iteration and frequent commits are necessary.
+         
         </article>
       </section>
       <section class="main-section" id="Variables">
-        <header>Variables</header>
-        <p>
-          You use variables as symbolic names for values in your application.
-          The names of variables, called identifiers, conform to certain rules.
-        </p>
-        <p>
-          A JavaScript identifier must start with a letter, underscore (_), or
-          dollar sign ($); subsequent characters can also be digits (0-9).
-          Because JavaScript is case sensitive, letters include the characters
-          "A" through "Z" (uppercase) and the characters "a" through "z"
-          (lowercase).
-        </p>
-        <p>
-          You can use ISO 8859-1 or Unicode letters such as å and ü in
-          identifiers. You can also use the Unicode escape sequences as
-          characters in identifiers. Some examples of legal names are
-          Number_hits, temp99, and _name.
-        </p>
-      </section>
-      <section class="main-section" id="Declaring_variables">
-        <header>Declaring variables</header>
-        <article>
-          You can declare a variable in three ways:
-          <p>
-            With the keyword var. For example, <code>var x = 42.</code> This
-            syntax can be used to declare both local and global variables.
-          </p>
-          <p>
-            By simply assigning it a value. For example,
-            <code>x = 42.</code> This always declares a global variable. It
-            generates a strict JavaScript warning. You shouldn't use this
-            variant.
-          </p>
-          <p>
-            With the keyword let. For example,<code> let y = 13.</code> This
-            syntax can be used to declare a block scope local variable. See
-            Variable scope below.
-          </p>
-        </article>
+        <header>Performing Git</header>
+        
+        <h2>Steps in performing Git:</h2>
+        <h4>Install Git</h4>
+          <li>Download <b>Git installer</b> to your PC</li>
+          <li>Open a terminal or command prompt</li>
+          <li>type git and press enter</li>
+            <code>git</code>
+        <h4>Clone repository</h4>
+          <li>Open cmd or terminal or any of your preferred CLI. </li>
+          <li>Select the best location for you to clone. In this example, I cloned it on drive C: inside folder users/pc. Remember the directory structure you learned in Platform Technologies.</li>
+          <li>Type the command</li>
+            <code> https://github.com/your username/repository name.git</code>
+          <li>After cloning your repository, remember that a new folder is created which is your repository name. Dont forget to move inside that folder before issuing the git commands later. </li>
+          <li>Change the directory by typing <b>cd [repository name]</b> then type:</li>
+            <code>git status</code>
+          <li>Add any file in your repository, preferably a text file. Then type <b>git status</b> again. It will display the new files as untracked files. You can now push (upload) it in your repository.</li>
+            <code>git add . [this will upload everything] you can specify a file eg git add echo.txt</code>
+            <code>git commit -m "Descriptive Comment" </code>
+            <code>git push</code>
       </section>
       <section class="main-section" id="Variable_scope">
-        <header>Variable scope</header>
-        <article>
-          <p>
-            When you declare a variable outside of any function, it is called a
-            global variable, because it is available to any other code in the
-            current document. When you declare a variable within a function, it
-            is called a local variable, because it is available only within that
-            function.
-          </p>
+        <header>HTML Elements</header>
+          <h3>Basic HTML</h3>
+            <img src="basic.png" alt="BASIC HTML">
+          <h3>Formatting</h3>
+            <img src="format1.png" alt="Formatting">
+            <img src="format2.png" alt="Formatting">
+            <img src="format3.png" alt="Formatting">
+            <img src="format4.png" alt="Formatting">
+          <h3>Forms and Input</h3>
+            <img src="forms.png" alt="Forms and inputs">
+          <h3>Frames</h3>
+            <img src="frames.png" alt="Frames">
+          <h3>Images</h3>
+            <img src="images.png" alt="images">
+          <h3>Audio and Video</h3>
+            <img src="audio.png" alt="Audio / Video">
+          <h3>Links</h3>
+            <img src="link.png" alt="Links">
+          <h3>Lists</h3>
+            <img src="list.png" alt="Lists">
+          <h3>Tables</h3>
+            <img src="table.png" alt="Tables">
+          <h3>Styles and Semantics</h3>
+            <img src="style.png" alt="Style and Semantics">
+          <h3>Meta Info</h3>
+            <img src="meta.png" alt="Meta Info">
+          <h3>Programming</h3>
+            <img src="prog.png" alt="Programming">
 
-          <p>
-            JavaScript before ECMAScript 2015 does not have block statement
-            scope; rather, a variable declared within a block is local to the
-            function (or global scope) that the block resides within. For
-            example the following code will log 5, because the scope of x is the
-            function (or global context) within which x is declared, not the
-            block, which in this case is an if statement.
-          </p>
-          <code>if (true) { var x = 5; } console.log(x); // 5</code>
-          <p>
-            This behavior changes, when using the let declaration introduced in
-            ECMAScript 2015.
-          </p>
-
-          <code
-            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-            not defined</code
-          >
-        </article>
       </section>
       <section class="main-section" id="Global_variables">
-        <header>Global variables</header>
+        <header>HTML5</header>
         <article>
           <p>
-            Global variables are in fact properties of the global object. In web
-            pages the global object is window, so you can set and access global
-            variables using the window.variable syntax.
+            HTML is the standard markup language used to create the structure and content of web pages. HTML5 is the latest version of HTML, and it introduces new features and improvements over its predecessors. It provides tags and attributes that define the various elements on a web page, such as headings, paragraphs, images, links, forms, and more. HTML5 also includes new elements like  <b>header</b>, <b>footer</b>, <b>article</b>, <b>section</b>, <b>nav</b>, and <b>aside</b> which help in structuring the content more semantically.
           </p>
 
           <p>
-            Consequently, you can access global variables declared in one window
-            or frame from another window or frame by specifying the window or
-            frame name. For example, if a variable called phoneNumber is
-            declared in a document, you can refer to this variable from an
-            iframe as parent.phoneNumber.
+            HTML5 emphasizes semantic markup, which means using elements that convey the meaning and structure of content. Semantic elements like 
+            <b>header</b>, <b>footer</b>, <b>article</b>, <b>section</b>, <b>nav</b>, and <b>aside</b> provide clearer intent and improve accessibility and SEO (Search Engine Optimization). Search engines can better understand the content's structure and context, leading to improved search rankings and user experience.
+          </p>
+
+          <p>
+            HTML5 introduces technologies like Web Storage (localStorage and sessionStorage) and the Application Cache (AppCache), which enable developers to create offline-capable web applications. Users can continue using the application even without an internet connection, enhancing accessibility and user engagement. While not exclusive to HTML5, the adoption of HTML5 has coincided with the widespread adoption of responsive web design principles. HTML5 provides the foundation for creating flexible, adaptive layouts that adjust seamlessly to different screen sizes and devices, improving accessibility and user experience across desktops, tablets, and smartphones. HTML5 includes the Geolocation API, which allows web applications to access a user's geographical location (with their permission) using their device's GPS or other location detection mechanisms. This feature enables location-based services and personalized content delivery, opening up new possibilities for web applications.
           </p>
         </article>
       </section>
       <section class="main-section" id="Constants">
-        <header>Constants</header>
+        <header>CSS (Cascading Style Sheets):</header>
         <article>
           <p>
-            You can create a read-only, named constant with the const keyword.
-            The syntax of a constant identifier is the same as for a variable
-            identifier: it must start with a letter, underscore or dollar sign
-            and can contain alphabetic, numeric, or underscore characters.
-          </p>
-
-          <code>const PI = 3.14;</code>
-          <p>
-            A constant cannot change value through assignment or be re-declared
-            while the script is running. It has to be initialized to a value.
+            CSS uses selectors to target specific HTML elements and apply styles to them. Selectors can target elements based on their tag name, class, ID, attributes, or relationships with other elements. CSS also employs the concept of cascading, where styles are applied based on specificity and order of declaration. This allows for fine-grained control over styling and enables the creation of modular, maintainable style sheets.
           </p>
 
           <p>
-            The scope rules for constants are the same as those for let block
-            scope variables. If the const keyword is omitted, the identifier is
-            assumed to represent a variable.
+            CSS plays a crucial role in creating responsive web designs that adapt to different screen sizes and devices. Media queries, a feature of CSS, allow developers to apply styles based on the characteristics of the user's device, such as screen width, height, orientation, and resolution. This enables the creation of fluid, flexible layouts that provide optimal viewing experiences across various devices and screen sizes.
           </p>
 
           <p>
-            You cannot declare a constant with the same name as a function or
-            variable in the same scope. For example:
+            CSS introduces advanced layout techniques like Flexbox and CSS Grid Layout, which provide powerful tools for creating complex and responsive layouts with ease. Flexbox enables flexible and efficient alignment and distribution of elements within a container, while CSS Grid Layout offers a two-dimensional grid system for precise control over layout and positioning.
           </p>
 
-          <code
-            >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-            WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-            //statements }</code
-          >
-          However, object attributes are not protected, so the following
-          statement is executed without problems.
-          <code
-            >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-            "otherValue";</code
-          >
+          <p>
+            CSS supports animations and transitions, allowing developers to add dynamic effects and interactivity to web pages without relying on JavaScript or external libraries. CSS animations enable the gradual change of element properties over time, while transitions provide smooth and controlled transitions between different states of an element, such as hover or focus.
+          </p>
+
+          <h4>Example:<h4>
+          <code>
+          p {
+            color: #333; 
+            font-size: 16px; 
+            line-height: 1.5; 
+          }
+          
+          a {
+              color: blue; 
+              text-decoration: none; 
+          }
+          
+          h2.section-heading {
+              color: green; 
+              font-size: 24px; 
+              margin-bottom: 10px; 
+          }
+          
+          .container {
+              width: 80%; 
+              margin: 0 auto; 
+              background-color: #f0f0f0; 
+              padding: 20px; 
+              border-radius: 5px; 
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+          }
+          </code>
         </article>
       </section>
       <section class="main-section" id="Data_types">
-        <header>Data types</header>
-        <article>
-          <p>The latest ECMAScript standard defines seven data types:</p>
-          <ul>
-            <li>
-              <p>Six data types that are primitives:</p>
-              <ul>
-                <li>Boolean. true and false.</li>
-                <li>
-                  null. A special keyword denoting a null value. Because
-                  JavaScript is case-sensitive, null is not the same as Null,
-                  NULL, or any other variant.
-                </li>
-                <li>
-                  undefined. A top-level property whose value is undefined.
-                </li>
-                <li>Number. 42 or 3.14159.</li>
-                <li>String. "Howdy"</li>
-                <li>
-                  Symbol (new in ECMAScript 2015). A data type whose instances
-                  are unique and immutable.
-                </li>
-              </ul>
-            </li>
+        <header>Java Script</header>
+        <p>
+          JavaScript is inherently event-driven, meaning it responds to user interactions and other events that occur within the web browser environment. Developers can define event handlers to execute specific code in response to events such as clicks, mouse movements, key presses, form submissions, and page load. One of the core features of JavaScript is its ability to manipulate the Document Object Model (DOM), which represents the structure and content of an HTML document. JavaScript can dynamically add, remove, or modify elements and attributes of the DOM, allowing for dynamic updates and interactions without needing to reload the entire page. JavaScript supports asynchronous programming, which enables non-blocking execution of code. Asynchronous operations, such as fetching data from a server (Ajax), executing time-consuming tasks, or handling user input, can be performed without blocking the main execution thread. This ensures a responsive user interface and improves the overall performance of web applications.
+        </p>
 
-            <li>and Object</li>
-          </ul>
-          Although these data types are a relatively small amount, they enable
-          you to perform useful functions with your applications. Objects and
-          functions are the other fundamental elements in the language. You can
-          think of objects as named containers for values, and functions as
-          procedures that your application can perform.
-        </article>
+        <p>
+          JavaScript is commonly used for client-side form validation, where validation logic is executed in the user's browser before submitting data to the server. By validating input fields such as email addresses, passwords, and numeric values, JavaScript can provide instant feedback to users and prevent unnecessary server requests, improving the user experience and reducing server load. JavaScript is supported by all modern web browsers, making it a versatile and widely adopted language for web development. While browser inconsistencies and compatibility issues were more prevalent in the past, modern JavaScript development practices, along with standardized web APIs and polyfills, help ensure cross-browser compatibility and consistent behavior across different platforms and devices.
+        </p>
+          
+        <h4>Example:</h4>
+        <code>
+          function handleClick() {
+            var outputElement = document.getElementById("output");
+            outputElement.textContent = "Button Clicked!";
+        }
+    
+        var buttonElement = document.getElementById("myButton");
+        buttonElement.addEventListener("click", handleClick);
+        </code>
       </section>
       <section class="main-section" id="if...else_statement">
-        <header>if...else statement</header>
-        <article>
-          Use the if statement to execute a statement if a logical condition is
-          true. Use the optional else clause to execute a statement if the
-          condition is false. An if statement looks as follows:
+        <header>Linux</header>
+        <h2>list of Commands</h2>
+        <ul>
+          <li>installs Linux on you computer</li>
+            <code>wsl --install</code>
+          <li>opens Linux in your terminal</li>
+            <code>wsl</code>
+          <li>returns to command prompt in windows</li>
+            <code>logout or exit</code>
+          <li>clears the terminal screen</li>
+            <code>clear</code>
+        </ul>
+        <h4>Apache Commands</h4>
+        <ul>
+          <li>updates Linux before installation of Apache</li>
+            <code>sudo apt update</code>
+          <li>upgrades Linux </li>
+            <code>sudo apt upgrade</code>
+          <li>installs Apache server</li>
+            <code>sudo apt-get install apache2</code>
+          <li>starts Apache Server</li>
+            <code>sudo service apache2 start</code>
+          <li>stops Apache Server</li>
+            <code>sudo service apache2 stop</code>
+        </ul>
+        <h4>Apache Setup</h4>
+        <ul>
+          <li>open text editor</li>
+            <code>sudo nano</code>
+          <li>make folder writable </li>
+            <code>sudo chown -R username path/to/working/directory</code>
+          <li>enable site look for document root and change it your desired folder to run in localhost</li>
+            <code>sudo nano /etc/apache2/sites-available/000-default.conf</code>
+          <li>check if apache is runnin</li>
+            <code>sudo systemctl status apache2</code>
+          <li>restart Apache. You need to this every time you change document root. The refresh your browser to update the output.</li>
+            <code>sudo systemctl restart apache2</code>
+        </ul>
+        <h4>Folder Location</h4>
+        <ul>
+          <li>Apache Folder</li>
+            <code>/etc/apache2</code>
+          <li>Document Root </li>
+            <code>/var/www/</code>
+        </ul>
 
-          <code>if (condition) { statement_1; } else { statement_2; }</code>
-          condition can be any expression that evaluates to true or false. See
-          Boolean for an explanation of what evaluates to true and false. If
-          condition evaluates to true, statement_1 is executed; otherwise,
-          statement_2 is executed. statement_1 and statement_2 can be any
-          statement, including further nested if statements.
-          <p>
-            You may also compound the statements using else if to have multiple
-            conditions tested in sequence, as follows:
-          </p>
-          <code
-            >if (condition_1) { statement_1; } else if (condition_2) {
-            statement_2; } else if (condition_n) { statement_n; } else {
-            statement_last; }
-          </code>
-          In the case of multiple conditions only the first logical condition
-          which evaluates to true will be executed. To execute multiple
-          statements, group them within a block statement ({ ... }) . In
-          general, it's good practice to always use block statements, especially
-          when nesting if statements:
-
-          <code
-            >if (condition) { statement_1_runs_if_condition_is_true;
-            statement_2_runs_if_condition_is_true; } else {
-            statement_3_runs_if_condition_is_false;
-            statement_4_runs_if_condition_is_false; }</code
-          >
-          It is advisable to not use simple assignments in a conditional
-          expression, because the assignment can be confused with equality when
-          glancing over the code. For example, do not use the following code:
-          <code>if (x = y) { /* statements here */ }</code> If you need to use
-          an assignment in a conditional expression, a common practice is to put
-          additional parentheses around the assignment. For example:
-
-          <code>if ((x = y)) { /* statements here */ }</code>
-        </article>
       </section>
       <section class="main-section" id="while_statement">
-        <header>while statement</header>
-        <article>
-          A while statement executes its statements as long as a specified
-          condition evaluates to true. A while statement looks as follows:
-
-          <code>while (condition) statement</code> If the condition becomes
-          false, statement within the loop stops executing and control passes to
-          the statement following the loop.
-
-          <p>
-            The condition test occurs before statement in the loop is executed.
-            If the condition returns true, statement is executed and the
-            condition is tested again. If the condition returns false, execution
-            stops and control is passed to the statement following while.
-          </p>
-
-          <p>
-            To execute multiple statements, use a block statement ({ ... }) to
-            group those statements.
-          </p>
-
-          Example:
-
-          <p>
-            The following while loop iterates as long as n is less than three:
-          </p>
-
-          <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
-          <p>
-            With each iteration, the loop increments n and adds that value to x.
-            Therefore, x and n take on the following values:
-          </p>
-
-          <ul>
-            <li>After the first pass: n = 1 and x = 1</li>
-            <li>After the second pass: n = 2 and x = 3</li>
-            <li>After the third pass: n = 3 and x = 6</li>
-          </ul>
-          <p>
-            After completing the third pass, the condition n &lt; 3 is no longer
-            true, so the loop terminates.
-          </p>
-        </article>
-      </section>
-      <section class="main-section" id="Function_declarations">
-        <header>Function declarations</header>
-        <article>
-          A function definition (also called a function declaration, or function
-          statement) consists of the function keyword, followed by:
-
-          <ul>
-            <li>The name of the function.</li>
-            <li>
-              A list of arguments to the function, enclosed in parentheses and
-              separated by commas.
-            </li>
-            <li>
-              The JavaScript statements that define the function, enclosed in
-              curly brackets, { }.
-            </li>
-          </ul>
-          <p>
-            For example, the following code defines a simple function named
-            square:
-          </p>
-
-          <code>function square(number) { return number * number; }</code>
-          <p>
-            The function square takes one argument, called number. The function
-            consists of one statement that says to return the argument of the
-            function (that is, number) multiplied by itself. The return
-            statement specifies the value returned by the function.
-          </p>
-          <code>return number * number;</code>
-          <p>
-            Primitive parameters (such as a number) are passed to functions by
-            value; the value is passed to the function, but if the function
-            changes the value of the parameter, this change is not reflected
-            globally or in the calling function.
-          </p>
-        </article>
-      </section>
-      <section class="main-section" id="Reference">
-        <header>Reference</header>
-        <article>
-          <ul>
-            <li>
-              All the documentation in this page is taken from
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
-                target="_blank"
-                >MDN</a
-              >
-            </li>
-          </ul>
-        </article>
+        <header>VSCODE Shorcut Keys</header>
+          <li>Open Panel</li>
+            <code>ctrl + p</code>
+          <li>Move single line</li>
+            <code>alt + up & down keys</code>
+          <li>Open setting</li>
+            <code>ctrl + ,</code>
+          <li>Close VS window</li>
+            <code>ctrl + k + w</code>
+          <li>Open Folder</li>
+            <code>ctrl + k + o</code>
+          <li>Create New File</li>
+            <code>ctrl + n</code>
+          <li>Open Terminal</li>
+            <code>ctrl + ~</code>
+          <li>Save</li>
+            <code>ctrl + shift + s</code>
+          <li>Split Window</li>
+            <code>ctrl + /</code>
+          <li>Navigate through open files</li>
+            <code>alt + sequence number of the file</code>
+          <li>Move multiple lines</li>
+            <code>ctrl + a then shift + tab</code>
       </section>
     </main>
   </body>
